@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Proyecto fin de Grado" content="">
+  <meta name="Oscar Casal Rodriguez" content="">
+
+  <title>Rust Style, traficantes de Oxido</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link href="css/agency.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation Dejar para el futuro-->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">¡Bienvenido a Rust Style!</div>
+        <div class="intro-heading text-uppercase">Un lugar para los amantes del Oxido</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Cuentame más</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Rat Style</h2>
+          <h3 class="section-subheading text-muted">En esta página encontrarás toda la informacion necesaria sobre este estilo tan peculiar</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4 class="service-heading">¿Qué és?</h4>
+          <p class="text-muted">El Rat Style es un estilo de preparación de chapa y carrocería de los vehiculos que nació en estados unidos, con la moda de los Rat Rod, de aquí este estilo fue creando sus variantes y expandiendose por todo el mundo.</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="service-heading">¿En que Consiste?</h4>
+          <p class="text-muted">En preparar toda la Chapa del vehiculo para que parezca abandonado y deteriorado, lo mas común es Oxidarla y preparar dicho oxido para que no deje vulnerable a la chapa.</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="service-heading">¿Donde están sus principales focos?</h4>
+          <p class="text-muted">Principalmene, en Estados Unidos, Brasil y Alemania, sin embargo poco a poco este estilo tabú empieza a estar mas aceptado por todos, y expandiendose por todo el mundo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Galería</h2>
+          <h3 class="section-subheading text-muted">Pincha en cada imagen para una pequeña descripción</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën AX del 95</h4>
+            <p class="text-muted">Francés con ganas de dar guerra</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën AX del 95</h4>
+            <p class="text-muted">Dando un paseo por las playas de Samil</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën AX del 95</h4>
+            <p class="text-muted">Comenzando a oxidar la aleta izquierda</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën ZX del 94</h4>
+            <p class="text-muted">Parrilla de esté abuelo oxidado</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën ZX del 94</h4>
+            <p class="text-muted">Primeros pasos para convertirse en un Full Rat</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Citroën ZX del 94</h4>
+            <p class="text-muted">Old Soldiers Never Die</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Como Lograr un buen Rat</h2>
+          <h3 class="section-subheading text-muted">Aquí un par de pistas sobre como obtener el mejor Rat Style!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>Paciencia</h4>
+                  <h4 class="subheading">"Los ríos profundos fluyen lentamente...."</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Como bien dice el proverbio, la paciencia es el punto mas importante de el Rat, no puedes oxidar nada de un dia para otro, y la espera puede ser agotadora, pero si sabes esperar tendrá sus frutos.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>No tengas miedo</h4>
+                  <h4 class="subheading">"Si lo piensas, decídelo. Si lo decidiste, no lo pienses"</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">El Rat Style es un estilo arriesgado, prueba, falla y vuelve a intentarlo, es así como quedan los mejores resultados, exerimenta lo máximo posible y no olvides darle tu toque personal a todo lo que hagas.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>No hagas caso a las malas lenguas</h4>
+                  <h4 class="subheading">"muchos se quejarán, pero solo por que no se atreven a hacer lo mismo que tú"</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Muchísima gente te criticará por hacer que la chapa parezca deteriorada, pero si realmente te gusta, no dejes que eso te frene, muchos serán puristas o detailers que no entenderán tus gustos, pero no por ello son peores. haz lo que te guste y siempre con la cabeza alta.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>No todo es la Chapa</h4>
+                  <h4 class="subheading">"Lo importante esta en el interior"</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Sí, puedes tener un full rat, o solo por ciertas partes del coche, pero los pequeños detalles le dan el toque especial a este estilo, volante, pegatinas, estampados y demas detalles del interior darán a tu Rat Style un toque unico y diferente!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact  REPASAR-->
+   <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contacta con nosotros!</h2>
+          <h3 class="section-subheading text-muted">¡Envianos tus dudas o sugerencias!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Porfavor, introduce tu nombre">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Porfvor, introduce un mail valido">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <!-- <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div> -->
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="¿no nos quieres decir nada?"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Your Website 2019</span>
+        </div>
+        <!-- <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div> -->
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">AX Prestige 95</h2>
+                <p class="item-intro text-muted">Fase Final del Rat Stile de la aleta izquierda.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <p>Los coches Franceses no suelen ser los mas populares para este tipo de preparación, pero los Citroen de las decadas de 80 y 90 tenian una linea tan unica que dejan ver un estilo unico y muy bonito.</p>
+                <ul class="list-inline">
+                  <li>Fecha: Abril 2019</li>
+                  <li>Dueño: Oscar "Kin" Casal</li>
+                  <li>Fotógrafo:  Oscar "Kin" Casal</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Ax Prestige 95</h2>
+                <p class="item-intro text-muted">Fase intermedia del Rat Style de la aleta izquierda.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>En este caso el pequeño francés  tenía la defensa y los intermitentes de serie, además se puede observar zonas de chapa entre el oxido, antes de el tratamiento con vinagre y Peroxido de hidrogeno.</p>
+                <ul class="list-inline">
+                  <li>Date: Marzo 2019</li>
+                  <li>Dueño: Oscar "Kin" Casal</li>
+                  <li>Fotógrafo:  Oscar "Kin" Casal</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">AX Prestige 96</h2>
+                <p class="item-intro text-muted">En proceso de una capa de peroxido de hidrógeno</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                <p>Cómo se puede comprobar en esta fotografia, la aleta esta sin pintura y casi sin oxido, en este caso,  se estaba preparando para conseguir la primera capa superficial de Oxido para el pequeño francés.</p>
+                <ul class="list-inline">
+                  <li>Date: Febrero 2019</li>
+                  <li>Dueño: Oscar "Kin" Casal</li>
+                  <li>Fotógrafo: Oscar "Kin" Casal</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">ZX Advantage 94</h2>
+                <p class="item-intro text-muted">Detalle de rejilla con decapante.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>En esta fotógrafia podemos comprobar el efecto de nuestro gran amigo, el decapante, en este caso en la rejilla de este ZX que nos aporta Victor en sus primeras fases.</p>
+                <ul class="list-inline">
+                  <li>Date: Abril 2016</li>
+                  <li>Dueño: Victor "Z" Alvarez</li>
+                  <li>Fotógrafo: Victor "Z" Alvarez</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">ZX Advantage 94</h2>
+                <p class="item-intro text-muted">Fotógrafia en un parking donde se aprecia el dorsal decapado.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>En este caso, podemos ver como, despues de terminar de oxidar la aleta izquierda, Victor decidió empezar a quitar la pintura con radial del resto del coche, al hacerlo así la chapa oxida antes, ya que destruyes el galvanizado, también es un proceso mucho mas cansado.</p>
+                <ul class="list-inline">
+                  <li>Date: Junio 2016</li>
+                  <li>Dueño: Victor "Z" Alvarez</li>
+                  <li>Fotógrafo: Victor "Z" Alvarez</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">ZX Advantage 94</h2>
+                <p class="item-intro text-muted">Fotografía nocturna y una de las ultimas de este viejo francés.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Esta fotografía es una de las ultimas de este proyecto inacabado, en este momento tenía el capó completamente decapado y no quedaba mucha chapa por limpiar de pintura, solo quedaría intentar atraer el oxido y  tratarlo para que no destruya la chapa.</p>
+                <ul class="list-inline">
+                  <li>Date: Diciembre 2016</li>
+                  <li>Dueño: Victor "Z" Alvarez</li>
+                  <li>Fotógrafo: Victor "Z" Alvarez</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
